@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico:wght@200;400;600&display=swap");
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css");
+
+* {
+  box-sizing: border-box;
+}
+.cd__main{
+   background: pink !important;
+   font-family: 'Pacifico', cursive !important;
+   min-height: 450px;
+}
+body { 
+    background-image: url('bg.png');
+    background-size: cover;
+    background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Pacifico', cursive;
+  font-size: 17px;
+  color: #ffffff;
+  margin: 0;
+  min-height: 100vh;
+}
+
+p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Thêm hiệu ứng shadow */
+}
+
+.heart {
+  position: fixed;
+  font-size: 0.8rem;
+  top: -1vh;
+  transform: translateY(0);
+  animation: fall 3s linear forwards;
+}
+
+@keyframes fall {
+  from {
+     transform: translateY(0vh) translateX(-10vw); 
+  }
+  to {
+     transform: translateY(105vh) translateX(10vw); 
+  }
+}
+
+/* login  */
+
+.container{
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;	 
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box{
+    width: 250px;
+    margin: 0 10px;
+    transition: 1s;
+
+}
+.box img{
+    display: block;
+    width:100%;
+    border-radius: 5px;
+}
+.box:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+/* gift  */
+
+.container2{
+    width: 90%;
+    padding: 20px;
+    margin: 100px auto;	 
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.box2{
+    width: 250px;
+    margin: 0 10px;
+    transition: 1s;
+
+}
+.box2 img{
+    display: block;
+    width:100%;
+    border-radius: 5px;
+}
+.box2:hover{
+    transform: scale(1.3);
+    z-index: 2;
+}
+
+
+/* chân trang nè */
+footer {
+    background-color: #333; /* Màu nền của chân trang */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 30px; /* Đặt chiều cao của chân trang */
+    display: flex;
+    justify-content: space-between; /* Phân bố không gian giữa các phần tử */
+    align-items: center; /* Canh giữa theo chiều dọc */
+    left: 0; /* Đặt vị trí bắt đầu từ góc trái */
+}
+
+.guide-link {
+    color: #fff;
+    text-decoration: none;
+    margin-right: auto; /* Đẩy phần tử sang bên phải cùng */
+
+}
+
+footer p {
+    margin: 0; /* Loại bỏ margin mặc định của các phần tử p */
+    line-height: 1; /* Điều chỉnh line-height cho phù hợp */
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    flex-grow: 1; /* Cho phần tử p mở rộng để lấp đầy không gian trống */
+}
+
+
+
+
+/* CSS cho input */
+input[type="text"], input[type="password"], input[type="email"], input[type="number"], input[type="tel"], input[type="url"], textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none; /* Loại bỏ đường viền xung quanh input khi được focus */
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus, input[type="password"]:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="tel"]:focus, input[type="url"]:focus, textarea:focus {
+    border-color: #66afe9; /* Màu đường viền khi input được focus */
+    box-shadow: 0 0 5px rgba(102, 175, 233, 0.5); /* Hiệu ứng bóng đổ khi input được focus */
+}
+
+/* CSS cho button */
+.box {
+    /* CSS cho container */
+    /* Bổ sung các quy tắc CSS cho box nếu cần */
+}
+
+.input-group {
+    /* CSS cho nhóm input và button */
+    display: flex; /* Sử dụng flexbox để căn chỉnh các phần tử */
+}
+
+.input-group input[type="password"] {
+    /* CSS cho input */
+    padding: 6px; /* Điều chỉnh padding để làm cho input nhỏ hơn */
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 14px; /* Điều chỉnh kích thước font chữ */
+}
+
+.input-group button {
+    /* CSS cho button */
+    padding: 6px 10px; /* Điều chỉnh padding để làm cho button nhỏ hơn */
+    border: none;
+    border-radius: 0 5px 5px 0;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    font-size: 14px; /* Điều chỉnh kích thước font chữ */
+}
+
+.input-group button:hover {
+    background-color: #0056b3;
+}
+
+
+/* paragraph */
+p {
+    /* text-indent: 0.5em; Thêm 3 dấu cách đầu dòng */
+}
